@@ -10,6 +10,53 @@
             font-family: 'Inter', Helvetica, Arial, sans-serif;
             box-sizing: border-box;
         }
+
+        .dark-img {
+            display: none !important;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: #8775CD !important;
+            }
+
+            .light-img {
+                display: none !important;
+            }
+
+            .dark-img {
+                display: inline !important;
+            }
+
+            .box {
+                background: #111135 !important;
+            }
+
+            .text {
+                color: #F3F0FD !important;
+            }
+
+            .text-2 {
+                color: #4E466E !important;
+            }
+            
+            .code-text {
+                background: #8775CD !important;
+                color: #F3F0FD !important;
+            }
+
+            .link {
+                background: #8775CD !important;
+            }
+
+            .link table {
+                background: #111135 !important;
+            }
+
+            .link table span {
+                color: #F3F0FD !important;
+            }
+        }
     </style>
 </head>
 <body style="background:#F3F0FD;padding:48px 0;">
@@ -21,26 +68,27 @@
                         <tr>
                             <td align="center" style="padding-bottom:20px">
                                 <a href="#">
-                                    <img src="https://email-rassilka.onrender.com/logo.png" width="100px" alt="">
+                                    <img src="https://email-rassilka.onrender.com/logo.png" width="100px" alt="" class="light-img">
+                                    <img src="https://email-rassilka.onrender.com/logo-dark.png" width="100px" alt="" class="dark-img">
                                 </a>
                             </td>
                         </tr>
                         <tr>
-                            <td align="center" style="background:#FFF;padding:40px 20px;border-radius:40px;">
+                            <td align="center" style="background:#FFF;padding:40px 20px;border-radius:40px;" class="box">
                                 <table cellpadding="0" cellspacing="0" style="width:100%;">
                                     <tr>
                                         <td align="center" style="padding-bottom:10px;">
-                                            <p style="margin:0;padding:0;font-size:22px;font-weight:400;line-height:110%;">Ваш код для входа на сайт</p>
+                                            <p style="margin:0;padding:0;font-size:22px;font-weight:400;line-height:110%;" class="text">Ваш код для входа на сайт</p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td align="center" style="padding-bottom:10px;">
-                                            <p style="width:100%;background:#F3F0FD;margin:0;padding:13px 20px;border-radius:20px;font-size:40px;font-weight:500;line-height:120%;letter-spacing:-0.02em;text-align:center;">677045</p>
+                                            <p style="width:100%;background:#F3F0FD;margin:0;padding:13px 20px;border-radius:20px;font-size:40px;font-weight:500;line-height:120%;letter-spacing:-0.02em;text-align:center;" class="code-text">677045</p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td align="center" style="padding-bottom:20px;">
-                                            <p style="margin:0px;padding:0;text-align:center;font-size:14px;font-weight:400;line-height:120%;letter-spacing:-0.03em;">Не передавайте этот код третьим лицам!</p>
+                                            <p style="margin:0px;padding:0;text-align:center;font-size:14px;font-weight:400;line-height:120%;letter-spacing:-0.03em;" class="text">Не передавайте этот код третьим лицам!</p>
                                         </td>
                                     </tr>
                                     <tr>
@@ -49,10 +97,11 @@
                                                 <table cellpadding="0" cellspacing="0">
                                                     <tr>
                                                         <td>
-                                                            <img src="https://email-rassilka.onrender.com/telegram.png" width="16" height="16" style="object-fit: contain;margin-bottom:-2px;" alt="">
+                                                            <img src="https://email-rassilka.onrender.com/telegram.png" width="16" height="16" style="object-fit: contain;margin-bottom:-2px;" alt="" class="light-img">
+                                                            <img src="https://email-rassilka.onrender.com/telegram-dark.png" width="16" height="16" style="object-fit: contain;margin-bottom:-2px;" alt="" class="dark-img">
                                                         </td>
                                                         <td>
-                                                            <span style="padding-left:4px;color:#111135;">Бот для подключения</span>
+                                                            <span style="padding-left:4px;color:#111135;" class="text">Бот для подключения</span>
                                                         </td>
                                                     </tr>
                                                 </table>
@@ -61,18 +110,19 @@
                                     </tr>
                                     <tr>
                                         <td align="center" style="padding-bottom:10px;">
-                                            <p style="margin:0;font-size:14px;font-weight:400;line-height:114%;letter-spacing:-0.03em;color:#111135;">Доступно для:</p>
+                                            <p style="margin:0;font-size:14px;font-weight:400;line-height:114%;letter-spacing:-0.03em;color:#111135;" class="text">Доступно для:</p>
                                         </td>
                                     </tr>
                                     <tr>
                                         <table cellpadding="0" cellspacing="0" style="width:100%;">
                                             <tr>
                                                 <td style="padding-right:5px;">
-                                                    <a align="center" href="#" style="display:inline-block;width:100%;text-align:center;text-decoration:none;font-size:14px;line-height:114%;letter-spacing:-0.03em;color:#111135;background:#F3F0FD;border-radius:40px;padding:1px;">
+                                                    <a align="center" href="#" style="display:inline-block;width:100%;text-align:center;text-decoration:none;font-size:14px;line-height:114%;letter-spacing:-0.03em;color:#111135;background:#F3F0FD;border-radius:40px;padding:1px;" class="link">
                                                         <table cellpadding="0" cellspacing="0" style="width:100%;text-align:center;background:#ffffff;border-radius:40px;">
                                                             <tr>
                                                                 <td align="right" style="width:57px;">
-                                                                    <img src="https://email-rassilka.onrender.com/link-icon-1.png" alt="" width="22">
+                                                                    <img src="https://email-rassilka.onrender.com/link-icon-1.png" alt="" width="22" class="light-img">
+                                                                    <img src="https://email-rassilka.onrender.com/link-icon-1-dark.png" alt="" width="22" class="dark-img">
                                                                 </td>
                                                                 <td align="left" style="width:84px;padding-left:8px;">
                                                                     <span style="line-height:38px;">Android</span>
@@ -82,11 +132,12 @@
                                                     </a>
                                                 </td>
                                                 <td style="padding:0 5px;">
-                                                    <a align="center" href="#" style="display:inline-block;width:100%;text-align:center;text-decoration:none;font-size:14px;line-height:114%;letter-spacing:-0.03em;color:#111135;background:#F3F0FD;border-radius:40px;padding:1px;">
+                                                    <a align="center" href="#" style="display:inline-block;width:100%;text-align:center;text-decoration:none;font-size:14px;line-height:114%;letter-spacing:-0.03em;color:#111135;background:#F3F0FD;border-radius:40px;padding:1px;" class="link">
                                                         <table cellpadding="0" cellspacing="0" style="width:100%;text-align:center;background:#ffffff;border-radius:40px;">
                                                             <tr>
                                                                 <td align="right" style="width:52px;padding-right:4px;">
-                                                                    <img src="https://email-rassilka.onrender.com/link-icon-2.png" alt="" width="16">
+                                                                    <img src="https://email-rassilka.onrender.com/link-icon-2.png" alt="" width="16" class="light-img">
+                                                                    <img src="https://email-rassilka.onrender.com/link-icon-2-dark.png" alt="" width="16" class="dark-img">
                                                                 </td>
                                                                 <td align="left" style="width:80px;padding-left:8px;">
                                                                     <span style="line-height:38px;">iPhone</span>
@@ -96,11 +147,12 @@
                                                     </a>
                                                 </td>
                                                 <td style="padding-left:5px;">
-                                                    <a align="center" href="#" style="display:inline-block;width:100%;text-align:center;text-decoration:none;font-size:14px;line-height:114%;letter-spacing:-0.03em;color:#111135;background:#F3F0FD;border-radius:40px;padding:1px;">
+                                                    <a align="center" href="#" style="display:inline-block;width:100%;text-align:center;text-decoration:none;font-size:14px;line-height:114%;letter-spacing:-0.03em;color:#111135;background:#F3F0FD;border-radius:40px;padding:1px;" class="link">
                                                         <table cellpadding="0" cellspacing="0" style="width:100%;text-align:center;background:#ffffff;border-radius:40px;">
                                                             <tr>
                                                                 <td align="right" style="width:45px;">
-                                                                    <img src="https://email-rassilka.onrender.com/link-icon-3.png" alt="" width="14">
+                                                                    <img src="https://email-rassilka.onrender.com/link-icon-3.png" alt="" width="14" class="light-img">
+                                                                    <img src="https://email-rassilka.onrender.com/link-icon-3-dark.png" alt="" width="14" class="dark-img">
                                                                 </td>
                                                                 <td align="left" style="width:88px;padding-left:8px;">
                                                                     <span style="line-height:38px;">Windows</span>
@@ -117,13 +169,13 @@
                                             <table cellpadding="0" cellspacing="0" style="width:100%;">
                                                 <tr>
                                                     <td align="center" style="padding-right:5px;width:33.3%">
-                                                        <a href="#" style="text-align:center;font-size:12px;line-height:114%;letter-spacing:0.03em;text-decoration:none;color:#111135;display:block;">Поддержка в Telegram</a>
+                                                        <a href="#" style="text-align:center;font-size:12px;line-height:114%;letter-spacing:0.03em;text-decoration:none;color:#111135;display:block;" class="text">Поддержка в Telegram</a>
                                                     </td>
                                                     <td align="center" style="padding:0 5px;width:33.3%">
-                                                        <a href="#" style="text-align:center;font-size:12px;line-height:114%;letter-spacing:0.03em;text-decoration:none;color:#111135;display:block;">Cайт VmVApp</a>
+                                                        <a href="#" style="text-align:center;font-size:12px;line-height:114%;letter-spacing:0.03em;text-decoration:none;color:#111135;display:block;" class="text">Cайт VmVApp</a>
                                                     </td>
                                                     <td align="center" style="padding-left:5px;width:33.3%">
-                                                        <a href="#" style="text-align:center;font-size:12px;line-height:114%;letter-spacing:0.03em;text-decoration:none;color:#111135;display:block;">support@vmvapp.net</a>
+                                                        <a href="#" style="text-align:center;font-size:12px;line-height:114%;letter-spacing:0.03em;text-decoration:none;color:#111135;display:block;" class="text">support@vmvapp.net</a>
                                                     </td>
                                                 </tr>
                                             </table>
@@ -131,7 +183,7 @@
                                     </tr>
                                     <tr>
                                         <td align="center" style="padding-top:20px;">
-                                            <p style="margin:0;font-size:12px;font-weight:400;line-height:114%;letter-spacing:-0.03em;color:#A7A0BF;">Данное письмо отправлено с адреса, предназначенного только для рассылок. Пожалуйста, не отвечайте на него</p>
+                                            <p style="margin:0;font-size:12px;font-weight:400;line-height:114%;letter-spacing:-0.03em;color:#A7A0BF;" class="text-2">Данное письмо отправлено с адреса, предназначенного только для рассылок. Пожалуйста, не отвечайте на него</p>
                                         </td>
                                     </tr>
                                 </table>
